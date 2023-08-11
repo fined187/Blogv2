@@ -14,7 +14,7 @@ export default function Home({ allPostsData }: { allPostsData: {
   id: string
 }[]}) {
   return (
-    <div>
+    <div className={homeStyles.container} >
       <Head>
         <title>LEE WOO TAIK</title>
       </Head>

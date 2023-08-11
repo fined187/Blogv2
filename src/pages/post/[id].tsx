@@ -2,6 +2,7 @@ import { getAllPostIds, getPostData } from "@/lib/post";
 import { GetStaticPaths, GetStaticProps } from "next";
 import Head from "next/head";
 import homeStyles from "../../styles/Home.module.css";
+import postStyles from "../../styles/Post.module.css";
 
 export default function Post({ postData }: { postData: {
   title: string,
@@ -10,7 +11,7 @@ export default function Post({ postData }: { postData: {
 }}) {
   return (
     <>
-      <div>
+      <div className={postStyles.container} >
         <Head>
           <title>{postData.title}</title>
         </Head>
